@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tails Downloaded File</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    
+</head>
+<body>
+
+<!-- Section 1 -->
+<section class="relative w-full bg-top bg-cover md:bg-center" x-data="{ showMenu: false }" style="background-image:url('https://cdn.devdojo.com/images/december2020/couple-on-couch.jpeg')">
+    <div class="absolute inset-0 w-full h-full bg-gray-900 opacity-25"></div>
+    <div class="absolute inset-0 w-full h-64 opacity-50 bg-gradient-to-b from-black to-transparent"></div>
+    <div class="relative flex items-center justify-between w-full h-20 px-8">
+
+        <a href="#_" class="relative flex items-center h-full pr-6 text-lg font-extrabold text-white">tails<span class="text-green-400">.</span></a>
+        <nav class="flex-col items-center justify-center hidden h-full space-y-3 bg-white md:justify-end md:bg-transparent md:space-x-5 md:space-y-0 md:relative md:flex md:flex-row" :class="{'flex fixed top-0 left-0 w-full z-40': showMenu, 'hidden': !showMenu }">
+            <a href="#_" class="relative text-lg font-medium tracking-wide text-green-400 transition duration-150 ease-out md:text-sm md:text-white" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <span class="block">Home</span>
+                <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-400" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                </span>
+            </a>
+            <a href="#_" class="relative text-lg font-medium tracking-wide text-green-400 transition duration-150 ease-out md:text-white md:text-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <span class="block">Features</span>
+                <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-400" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                </span>
+            </a>
+            <a href="#_" class="relative text-lg font-medium tracking-wide text-green-400 transition duration-150 ease-out md:text-white md:text-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <span class="block">Pricing</span>
+                <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-400" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                </span>
+            </a>
+            <a href="#_" class="relative text-lg font-medium tracking-wide text-green-400 transition duration-150 ease-out md:text-white md:text-sm" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <span class="block">Blog</span>
+                <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-400" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                </span>
+            </a>
+            <a href="#_" class="relative text-lg font-medium tracking-wide text-green-400 transition duration-150 ease-out md:text-sm md:text-white" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                <span class="block">Contact</span>
+                <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                    <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-green-400" x-transition:enter="transition ease-out duration-150" x-transition:enter-start="scale-0" x-transition:enter-end="scale-100" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="scale-100" x-transition:leave-end="scale-0" style="display: none;"></span>
+                </span>
+            </a>
+            <a href="#_" class="flex items-center px-3 py-2 text-sm font-medium tracking-normal text-white transition duration-150 bg-green-400 rounded hover:bg-green-500 ease">
+                <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+                </svg>
+                Log in
+            </a>
+        </nav>
+
+        <!-- Mobile Nav  -->
+        <nav class="fixed top-0 right-0 z-30 z-50 flex w-10 h-10 mt-4 mr-4 md:hidden">
+            <button @click="showMenu = !showMenu" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-white hover:bg-opacity-25 focus:outline-none">
+                <svg class="w-5 h-5 text-gray-200 fill-current" x-show="!showMenu" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+                <svg class="w-5 h-5 text-gray-500" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display: none;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </nav>
+        <!-- End Mobile Nav -->
+    </div>
+    <div class="relative z-10 max-w-6xl px-10 py-40 mx-auto">
+        <div class="flex flex-col items-center h-full lg:flex-row">
+            <div class="flex flex-col items-center justify-center w-full h-full lg:w-2/3 lg:items-start">
+                <p class="inline-block w-auto px-3 py-1 mb-5 text-xs font-medium text-white uppercase bg-green-400 rounded-full bg-gradient-to-br">REIKI MASTERS ASSOCIATION</p>
+                <h1 class="font-extrabold tracking-tight text-center text-white text-7xl lg:text-left xl:pr-32">Distance Healing: Energy Healing for Adults, Children &amp; Pets</h1>
+            </div>
+            <div class="w-full max-w-sm mt-20 lg:mt-0 lg:w-1/3">
+                <div class="relative">
+                    <div class="relative z-10 h-auto p-8 pt-6 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
+                        <h3 class="mb-6 text-2xl font-light">Learn more</h3><h3 class="">
+                        <div class="relative block mb-4">
+                            <input type="text" name="username" class="block w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:border-green-500 focus:outline-none" placeholder="Enter your username">
+                        </div>
+                        <div class="block mb-4">
+                            <input type="text" name="email" class="block w-full px-4 py-3 border border-gray-200 rounded shadow-sm focus:border-green-500 focus:outline-none" placeholder="Enter your email address">
+                        </div>
+                        <div class="block mb-4">
+                            <input type="password" name="password" class="block w-full px-4 py-3 border border-gray-200 rounded shadow-sm focus:border-green-500 focus:outline-none" placeholder="Enter your password">
+                        </div>
+                        <div class="block">
+                            <button class="w-full px-3 py-3 font-medium text-white bg-green-400 rounded">Sign Up</button>
+                        </div>
+                    </h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Section 2 -->
+<section class="relative leading-7 text-gray-900 bg-white border-solid">
+  <div class="box-border mx-auto border-solid lg:pl-8 max-w-7xl">
+    <div class="flex flex-col items-center leading-7 text-gray-900 border-0 border-gray-200 lg:flex-row">
+      <div class="box-border flex flex-col justify-center w-full h-full p-8 text-gray-900 border-solid lg:w-1/2 md:p-16 lg:p-0 lg:pl-10 lg:pr-20">
+        <h2 class="m-0 text-3xl font-medium leading-tight tracking-tight text-left text-black sm:text-4xl md:text-5xl">Spiritual &amp; Karmic Healing</h2>
+        <p class="mt-2 text-xl text-left border-0 border-gray-200 sm:text-2xl">Powerful Advanced Intensive Effective Session</p>
+        <div class="grid gap-4 mt-8 leading-7 border-0 border-gray-200 sm:mt-10 sm:gap-6 lg:mt-12 lg:gap-8">
+          <div class="box-border flex items-start text-gray-900 border-solid">
+            <div class="flex items-center justify-center w-12 h-12 leading-7 bg-blue-600 border-0 border-gray-200 rounded-full">
+              <p class="box-border m-0 text-xl text-white border-solid">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+              </p>
+            </div>
+            <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+              <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">Home Cleansing</h3>
+              <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">No more wasting time on manual tasks, you can leverage our automated tasks to make your life easier.</p>
+            </div>
+          </div>
+          <div class="box-border flex items-start text-gray-900 border-solid">
+            <div class="flex items-center justify-center w-12 h-12 leading-7 bg-blue-600 border-0 border-gray-200 rounded-full">
+              <p class="box-border m-0 text-xl text-white border-solid">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+              </p>
+            </div>
+            <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+              <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">Chakra Cleansing</h3>
+              <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">Utilize our email campaigns to send your users up-to-date information about your product and services.</p>
+            </div>
+          </div>
+          <div class="box-border flex items-start text-gray-900 border-solid">
+            <div class="flex items-center justify-center w-12 h-12 leading-7 bg-blue-600 border-0 border-gray-200 rounded-full">
+              <p class="box-border m-0 text-xl text-white border-solid">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              </p>
+            </div>
+            <div class="flex-1 ml-6 leading-7 border-0 border-gray-200">
+              <h3 class="box-border m-0 text-lg font-semibold leading-tight tracking-tight text-black border-solid sm:text-xl md:text-2xl">Distance Energy Inviguration </h3>
+              <p class="box-border mt-2 text-base leading-normal text-gray-900 border-solid">We offer some of the best support available. Contact us anytime of the day and we'll help you out ASAP.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full overflow-hidden leading-7 text-gray-900 border-0 border-gray-200 lg:w-1/2">
+        <img src="https://images.unsplash.com/photo-1553484771-047a44eee27a?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1234&amp;h=1600&amp;q=80" class="object-cover w-full h-full">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3 -->
+<section class="py-24 bg-indigo-700">
+    <div class="max-w-6xl px-10 mx-auto xl:max-w-7xl">
+        <div class="flex flex-col items-start justify-between lg:flex-row">
+            <div class="relative">
+                <h2 class="text-4xl font-extrabold text-white xl:text-5xl">Are you ready to level-up your game?</h2>
+                <p class="mt-2 text-xl text-indigo-400">Build beautiful pages with our components and templates.</p>
+            </div>
+            <a href="#_" class="flex items-center justify-center px-10 py-5 mt-10 text-2xl font-medium text-white bg-green-500 rounded-full hover:bg-green-400 lg:mt-0">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4 -->
+<section class="overflow-hidden text-gray-700 bg-white" x-data="{ billing: 'Monthly', basic: {'Monthly' : '19', 'Yearly' : '180'}, plus: {'Monthly' : '29', 'Yearly' : '270' }, pro: {'Monthly' : '49', 'Yearly' : '450' }, accronym: {'Monthly' : 'mo', 'Yearly' : 'yr' }}">
+    <div class="container px-5 pt-20 pb-24 mx-auto">
+
+        <div class="flex flex-col w-full mb-20 text-center">
+            <h1 class="mb-2 text-3xl font-medium text-gray-900 sm:text-4xl">Pricing Plans</h1>
+            <p class="mx-auto text-lg leading-relaxed text-gray-500 lg:w-2/3">We have fine tuned our pricing to fit businesses of any size.</p>
+            <div class="flex justify-center mt-6">
+                <nav class="relative inline-flex overflow-hidden text-sm border border-gray-300 rounded-lg">
+                    <div class="absolute w-1/2 h-full transition-all duration-150 ease-out bg-blue-600" :class="{ 'left-0' : billing == 'Monthly', 'left-1/2' : billing == 'Yearly' }"></div>
+                    <button @click="billing='Monthly'" class="relative z-20 px-5 py-3 font-bold focus:outline-none" :class="{ 'text-white' : billing == 'Monthly', 'text-gray-600 hover:text-gray-700' : billing == 'Yearly' }">
+                        Monthly Plan
+                    </button>
+                    <button @click="billing='Yearly'" class="relative z-20 px-6 py-3 font-bold focus:outline-none" :class="{ 'text-white' : billing == 'Yearly', 'text-gray-600 hover:text-gray-700' : billing == 'Monthly' }">
+                        Yearly Plan
+                    </button>
+                </nav>
+            </div>
+
+
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full p-2 xl:w-1/4 md:w-1/2">
+                <div class="relative flex flex-col justify-between h-full p-6 overflow-hidden border border-gray-300 rounded-lg justify">
+                    <div class="relative flex flex-col w-full">
+                        <h2 class="mb-1 text-sm font-medium tracking-widest uppercase">Starter</h2>
+                        <h1 class="pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200">Free</h1>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Standard Account</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Access to Public Forums</p>
+                        <p class="flex items-center mb-6 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>View Some Premium Content</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="inline-flex items-center justify-center w-full px-4 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">
+                            Get Started
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <p class="mt-3 text-xs text-center text-gray-500">All plans include a free onboarding call.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-2 xl:w-1/4 md:w-1/2">
+                <div class="relative flex flex-col justify-between h-full p-6 overflow-hidden border border-blue-600 rounded-lg">
+                    <span class="absolute top-0 right-0 px-3 py-1 text-xs tracking-widest text-white bg-blue-600 rounded-bl">POPULAR</span>
+                    <div class="relative flex flex-col w-full">
+
+                        <h2 class="mb-1 text-sm font-medium tracking-widest uppercase">Basic</h2>
+                        <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200"><span>$<span x-text="basic[billing]"></span></span><span class="ml-1 text-lg font-normal text-gray-500">/<span x-text="accronym[billing]"></span></span></h1>
+                        <p class="flex items-center mb-2 text-gray-600">
+                            <span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Everything in Starter</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Access to All Forums</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Access to our Private Slack</p>
+                        <p class="flex items-center mb-6 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>View All Premium Content</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="inline-flex items-center justify-center w-full px-4 py-3 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border border-blue-700 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Get Started
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <p class="mt-3 text-xs text-center text-gray-500">All plans include a free onboarding call.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-2 xl:w-1/4 md:w-1/2">
+                <div class="relative flex flex-col justify-between h-full p-6 overflow-hidden border border-gray-300 rounded-lg">
+                    <div class="flex flex-col w-full">
+                        <h2 class="mb-1 text-sm font-medium tracking-widest uppercase">Plus</h2>
+                        <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200"><span>$<span x-text="plus[billing]"></span></span><span class="ml-1 text-lg font-normal text-gray-500">/<span x-text="accronym[billing]"></span></span></h1>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Everything in Basic</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Monthly Consultations</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Unlimited Admin Accounts</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Faster Build Times</p>
+                        <p class="flex items-center mb-6 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Premium Support</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="inline-flex items-center justify-center w-full px-4 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">
+                            Get Started
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <p class="mt-3 text-xs text-center text-gray-500">All plans include a free onboarding call.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full p-2 xl:w-1/4 md:w-1/2">
+                <div class="relative flex flex-col justify-between h-full p-6 overflow-hidden border border-gray-300 rounded-lg">
+                    <div class="flex flex-col w-full">
+                        <h2 class="mb-1 text-sm font-medium tracking-widest uppercase">Pro</h2>
+                        <h1 class="flex items-center pb-4 mb-4 text-5xl leading-none text-gray-900 border-b border-gray-200"><span>$<span x-text="pro[billing]"></span></span><span class="ml-1 text-lg font-normal text-gray-500">/<span x-text="accronym[billing]"></span></span></h1>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Everything in Plus</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Weekly Consultations</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Ulimited Team Accounts</p>
+                        <p class="flex items-center mb-2 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>Priority Server Build Times</p>
+                        <p class="flex items-center mb-6 text-gray-600"><span class="inline-flex items-center justify-center flex-shrink-0 w-4 h-4 mr-2 text-white bg-gray-500 rounded-full"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg></span>24/7 Customer Service Support</p>
+                    </div>
+                    <div class="w-full">
+                        <button class="inline-flex items-center justify-center w-full px-4 py-3 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none">
+                            Get Started
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                        <p class="mt-3 text-xs text-center text-gray-500">All plans include a free onboarding call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 5 -->
+<section class="box-border relative block w-full py-32 overflow-hidden leading-6 text-left text-white bg-purple-900">
+    <div class="max-w-6xl px-4 px-12 mx-auto leading-6 text-left">
+        <div class="box-border flex flex-wrap justify-center text-center text-white lg:justify-start lg:text-left">
+
+            <div class="relative flex w-full pb-20 border-b border-purple-700 md:w-1/2 md:pb-0 md:pr-8 md:border-b-0 md:border-r">
+                <img src="https://cdn.devdojo.com/tails/avatars/093.jpg" class="box-border w-12 h-12 text-white align-middle border-none rounded-full">
+                <div class="relative w-full px-4 leading-6 text-left">
+                    <div class="box-border text-xl text-white">
+                        One of the best platforms available! We were able to creat your marketing sites and our application landing pages in record time!
+                    </div>
+                    <div class="box-border mt-4 text-sm font-semibold text-purple-300 uppercase">
+                        Franky Jones
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex w-full pt-20 md:w-1/2 md:pt-0 md:pl-8">
+                <img src="https://cdn.devdojo.com/tails/avatars/064.jpg" class="box-border w-12 h-12 text-white align-middle border-none rounded-full">
+                <div class="relative w-full px-4 leading-6 text-left">
+                    <div class="box-border text-xl text-white">
+                        Very useful tool! This tool made it easy for us to collaborate on our website redesign project. Our vision is now very clear thanks to this service.
+                    </div>
+                    <div class="box-border mt-4 text-sm font-semibold text-purple-300 uppercase">
+                        Michelle Henderson
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 6 -->
+<section class="w-full px-8 py-16 bg-gray-100 xl:px-8">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col items-center md:flex-row">
+
+            <div class="w-full space-y-5 md:w-3/5 md:pr-16">
+                <p class="font-medium text-blue-500 uppercase">Building Businesses</p>
+                <h2 class="text-2xl font-extrabold leading-none text-black sm:text-3xl md:text-5xl">
+                    Changing The Way People Do Business.
+                </h2>
+                <p class="text-xl text-gray-600 md:pr-16">Learn how to engage with your visitors and teach them about your mission. We're revolutionizing the way customers and businesses interact.</p>
+            </div>
+
+            <div class="w-full mt-16 md:mt-0 md:w-2/5">
+                <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7">
+                    <h3 class="mb-6 text-2xl font-medium text-center">Sign in to your Account</h3>
+                    <input type="text" name="email" class="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Email address">
+                    <input type="password" name="password" class="block w-full px-4 py-3 mb-4 border border-2 border-transparent border-gray-200 rounded-lg focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Password">
+                    <div class="block">
+                        <button class="w-full px-3 py-4 font-medium text-white bg-blue-600 rounded-lg">Log Me In</button>
+                    </div>
+                    <p class="w-full mt-4 text-sm text-center text-gray-500">Don't have an account? <a href="#_" class="text-blue-500 underline">Sign up here</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Section 7 -->
+<section class="text-gray-700 bg-white body-font">
+    <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+        <a href="#_" class="text-xl font-black leading-none text-gray-900 select-none logo">tails<span class="text-indigo-600">.</span></a>
+        <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2021 Tails - Tailwindcss Page Builder
+        </p>
+        <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Dribbble</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+        </span>
+    </div>
+</section>
+
+<!-- AlpineJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
+</body>
+</html>
